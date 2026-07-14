@@ -1,0 +1,196 @@
+# Reading pref.tcl
+# do fftfixed_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/kollu/dspquartus/fftfixed {C:/Users/kollu/dspquartus/fftfixed/top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:18:30 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kollu/dspquartus/fftfixed" C:/Users/kollu/dspquartus/fftfixed/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:18:30 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/kollu/dspquartus/fftfixed {C:/Users/kollu/dspquartus/fftfixed/simple_twiddle_blk.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:18:30 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kollu/dspquartus/fftfixed" C:/Users/kollu/dspquartus/fftfixed/simple_twiddle_blk.v 
+# -- Compiling module simple_twiddle_block
+# 
+# Top level modules:
+# 	simple_twiddle_block
+# End time: 23:18:30 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/kollu/dspquartus/fftfixed {C:/Users/kollu/dspquartus/fftfixed/s2p.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:18:30 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kollu/dspquartus/fftfixed" C:/Users/kollu/dspquartus/fftfixed/s2p.v 
+# -- Compiling module s2p
+# 
+# Top level modules:
+# 	s2p
+# End time: 23:18:31 on Apr 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/kollu/dspquartus/fftfixed {C:/Users/kollu/dspquartus/fftfixed/pipeline_regs.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:18:31 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kollu/dspquartus/fftfixed" C:/Users/kollu/dspquartus/fftfixed/pipeline_regs.v 
+# -- Compiling module pipeline_regs
+# 
+# Top level modules:
+# 	pipeline_regs
+# End time: 23:18:31 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/kollu/dspquartus/fftfixed {C:/Users/kollu/dspquartus/fftfixed/p2s.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:18:31 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kollu/dspquartus/fftfixed" C:/Users/kollu/dspquartus/fftfixed/p2s.v 
+# -- Compiling module p2s
+# 
+# Top level modules:
+# 	p2s
+# End time: 23:18:31 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/kollu/dspquartus/fftfixed {C:/Users/kollu/dspquartus/fftfixed/no_twiddle_blk.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:18:31 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kollu/dspquartus/fftfixed" C:/Users/kollu/dspquartus/fftfixed/no_twiddle_blk.v 
+# -- Compiling module no_twiddle_block
+# 
+# Top level modules:
+# 	no_twiddle_block
+# End time: 23:18:31 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/kollu/dspquartus/fftfixed {C:/Users/kollu/dspquartus/fftfixed/fft_core.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:18:31 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kollu/dspquartus/fftfixed" C:/Users/kollu/dspquartus/fftfixed/fft_core.v 
+# -- Compiling module fft_core
+# 
+# Top level modules:
+# 	fft_core
+# End time: 23:18:31 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/kollu/dspquartus/fftfixed {C:/Users/kollu/dspquartus/fftfixed/complex_twiddle_blk.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:18:31 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kollu/dspquartus/fftfixed" C:/Users/kollu/dspquartus/fftfixed/complex_twiddle_blk.v 
+# -- Compiling module complex_twiddle_block
+# 
+# Top level modules:
+# 	complex_twiddle_block
+# End time: 23:18:31 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/kollu/dspquartus/fftfixed {C:/Users/kollu/dspquartus/fftfixed/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:18:31 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kollu/dspquartus/fftfixed" C:/Users/kollu/dspquartus/fftfixed/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 23:18:31 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L arriaii_hssi_ver -L arriaii_pcie_hip_ver -L arriaii_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L arriaii_hssi_ver -L arriaii_pcie_hip_ver -L arriaii_ver -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 23:18:31 on Apr 12,2026
+# Loading work.tb
+# Loading work.top
+# Loading work.s2p
+# Loading work.fft_core
+# Loading work.no_twiddle_block
+# Loading work.pipeline_regs
+# Loading work.simple_twiddle_block
+# Loading work.complex_twiddle_block
+# Loading work.p2s
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time=5000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=15000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=25000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=35000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=45000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=55000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=65000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=75000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=85000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=95000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=105000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=115000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=125000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=135000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=145000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=155000 | OUT_real =   0.0000 | OUT_imag =   0.0000
+# Time=165000 | OUT_real =  -4.0000 | OUT_imag =   9.5000
+# Time=175000 | OUT_real =  -4.0000 | OUT_imag =   4.0000
+# Time=185000 | OUT_real =  -4.0000 | OUT_imag =   1.5000
+# Time=195000 | OUT_real =  -4.0000 | OUT_imag =   0.0000
+# Time=205000 | OUT_real =  -4.0000 | OUT_imag =  -1.5000
+# Time=215000 | OUT_real =  -4.0000 | OUT_imag =  -4.0000
+# Time=225000 | OUT_real =  -4.0000 | OUT_imag =  -9.5000
+# Time=235000 | OUT_real =  36.0000 | OUT_imag =   8.0000
+# Time=245000 | OUT_real =  -4.0000 | OUT_imag =   9.5000
+# Time=255000 | OUT_real =  -4.0000 | OUT_imag =   4.0000
+# Time=265000 | OUT_real =  -4.0000 | OUT_imag =   1.5000
+# Time=275000 | OUT_real =  -4.0000 | OUT_imag =   0.0000
+# Time=285000 | OUT_real =  -4.0000 | OUT_imag =  -1.5000
+# Time=295000 | OUT_real =  -4.0000 | OUT_imag =  -4.0000
+# Time=305000 | OUT_real =  -4.0000 | OUT_imag =  -9.5000
+# Time=315000 | OUT_real = 100.0000 | OUT_imag =   8.0000
+# Time=325000 | OUT_real =  -4.0000 | OUT_imag =   9.5000
+# Time=335000 | OUT_real =  -4.0000 | OUT_imag =   4.0000
+# Time=345000 | OUT_real =  -4.0000 | OUT_imag =   1.5000
+# Time=355000 | OUT_real =  -4.0000 | OUT_imag =   0.0000
+# Time=365000 | OUT_real =  -4.0000 | OUT_imag =  -1.5000
+# Time=375000 | OUT_real =  -4.0000 | OUT_imag =  -4.0000
+# Time=385000 | OUT_real =  -4.0000 | OUT_imag =  -9.5000
+# Time=395000 | OUT_real = 164.0000 | OUT_imag =   8.0000
+# Time=405000 | OUT_real =  -4.0000 | OUT_imag =   9.5000
+# Time=415000 | OUT_real =  -4.0000 | OUT_imag =   4.0000
+# Time=425000 | OUT_real =  -4.0000 | OUT_imag =   1.5000
+# Time=435000 | OUT_real =  -4.0000 | OUT_imag =   0.0000
+# Time=445000 | OUT_real =  -4.0000 | OUT_imag =  -1.5000
+# Time=455000 | OUT_real =  -4.0000 | OUT_imag =  -4.0000
+# Time=465000 | OUT_real =  -4.0000 | OUT_imag =  -9.5000
+# Time=475000 | OUT_real = 164.0000 | OUT_imag =   8.0000
+# Time=485000 | OUT_real =  -4.0000 | OUT_imag =   9.5000
+# Time=495000 | OUT_real =  -4.0000 | OUT_imag =   4.0000
+# Time=505000 | OUT_real =  -4.0000 | OUT_imag =   1.5000
+# Time=515000 | OUT_real =  -4.0000 | OUT_imag =   0.0000
+# Time=525000 | OUT_real =  -4.0000 | OUT_imag =  -1.5000
+# Time=535000 | OUT_real =  -4.0000 | OUT_imag =  -4.0000
+# Time=545000 | OUT_real =  -4.0000 | OUT_imag =  -9.5000
+# Time=555000 | OUT_real = 164.0000 | OUT_imag =   8.0000
+# Time=565000 | OUT_real =  -4.0000 | OUT_imag =   9.5000
+# Time=575000 | OUT_real =  -4.0000 | OUT_imag =   4.0000
+# Time=585000 | OUT_real =  -4.0000 | OUT_imag =   1.5000
+# Time=595000 | OUT_real =  -4.0000 | OUT_imag =   0.0000
+# Time=605000 | OUT_real =  -4.0000 | OUT_imag =  -1.5000
+# Time=615000 | OUT_real =  -4.0000 | OUT_imag =  -4.0000
+# Time=625000 | OUT_real =  -4.0000 | OUT_imag =  -9.5000
+# Time=635000 | OUT_real = 164.0000 | OUT_imag =   8.0000
+# Time=645000 | OUT_real =  -4.0000 | OUT_imag =   9.5000
+# Time=655000 | OUT_real =  -4.0000 | OUT_imag =   4.0000
+# Time=665000 | OUT_real =  -4.0000 | OUT_imag =   1.5000
+# ** Note: $finish    : C:/Users/kollu/dspquartus/fftfixed/tb.v(98)
+#    Time: 670 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at C:/Users/kollu/dspquartus/fftfixed/tb.v line 98
+# End time: 23:26:35 on Apr 12,2026, Elapsed time: 0:08:04
+# Errors: 0, Warnings: 0

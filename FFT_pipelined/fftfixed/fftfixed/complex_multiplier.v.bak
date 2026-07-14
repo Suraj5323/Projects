@@ -1,0 +1,32 @@
+// Complex Multiplier - Fixed-Point sQ5.2 format
+//
+// Input format  : sQ5.2 — 8-bit  (1 sign + 5 integer + 2 fractional)
+// Output format : sQ5.2 — 8-bit  (1 sign + 5 integer + 2 fractional)
+//
+// Q-format multiply analysis:
+//   a  is  sQ5.2  →  true value = a_bits / 2^2
+//   b  is  sQ5.2  →  true value = b_bits / 2^2
+//   a*b (raw bits) represents  true_value / 2^4  (four fractional bits)
+//   To restore 2 fractional bits we shift right by 2  (shed the extra 2 frac bits).
+//   Output is then truncated to 8 bits (sQ5.2).
+module cmplx_mult(
+    input  signed [7:0]  a_real, a_img,   // sQ5.2
+    input  signed [7:0]  b_real, b_img,   // sQ5.2
+    output signed [7:0]  out_real, out_img // sQ5.2
+);
+    // Full-width products: 8-bit × 8-bit → 16-bit (sQ10.4 — 4 fractional bits)
+    wire signed [15:0] rr = a_real * b_real;
+    wire signed [15:0] ii = a_img  * b_img;
+    wire signed [15:0] ri = a_real * b_img;
+    wire signed [15:0] ir = a_img  * b_real;
+
+    // Combine real and imaginary parts (17-bit to safely hold the difference/sum)
+    wire signed [16:0] sum_real = rr - ii;  // sQ10.4
+    wire signed [16:0] sum_imag = ri + ir;  // sQ10.4
+
+    // Shift right 2 to go from sQ10.4 → sQ10.2, then truncate to 8-bit sQ5.2.
+    // The upper integer bits are discarded by the output wire assignment.
+    assign out_real = sum_real >>> 2;  // [7:0] of the shifted result
+    assign out_img  = sum_imag >>> 2;
+
+endmodule

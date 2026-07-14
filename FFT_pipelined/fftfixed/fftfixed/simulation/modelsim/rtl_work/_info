@@ -1,0 +1,227 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/kollu/dspquartus/fftfixed/simulation/modelsim
+vcomplex_twiddle_block
+Z1 !s110 1776016111
+!i10b 1
+!s100 SLmL[84Jd?M@I1cU][m`k2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I9jHGgihA?[`9Y]Q30DBNF1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1775981972
+8C:/Users/kollu/dspquartus/fftfixed/complex_twiddle_blk.v
+FC:/Users/kollu/dspquartus/fftfixed/complex_twiddle_blk.v
+!i122 7
+L0 18 66
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1776016111.000000
+!s107 C:/Users/kollu/dspquartus/fftfixed/complex_twiddle_blk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kollu/dspquartus/fftfixed|C:/Users/kollu/dspquartus/fftfixed/complex_twiddle_blk.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+C:/Users/kollu/dspquartus/fftfixed
+Z9 tCvgOpt 0
+vfft_core
+R1
+!i10b 1
+!s100 QH?7zKj=8A?oYP5oTc_^02
+R2
+In2dGLb>=VR]71TYn`I_U<1
+R3
+R0
+R4
+8C:/Users/kollu/dspquartus/fftfixed/fft_core.v
+FC:/Users/kollu/dspquartus/fftfixed/fft_core.v
+!i122 6
+L0 17 199
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/kollu/dspquartus/fftfixed/fft_core.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kollu/dspquartus/fftfixed|C:/Users/kollu/dspquartus/fftfixed/fft_core.v|
+!i113 1
+R7
+R8
+R9
+vno_twiddle_block
+R1
+!i10b 1
+!s100 <P>3j:b9DjhB1V<3JSNk30
+R2
+I593KW^C>BLOm3>1:GMn2D2
+R3
+R0
+R4
+8C:/Users/kollu/dspquartus/fftfixed/no_twiddle_blk.v
+FC:/Users/kollu/dspquartus/fftfixed/no_twiddle_blk.v
+!i122 5
+Z10 L0 1 17
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/kollu/dspquartus/fftfixed/no_twiddle_blk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kollu/dspquartus/fftfixed|C:/Users/kollu/dspquartus/fftfixed/no_twiddle_blk.v|
+!i113 1
+R7
+R8
+R9
+vp2s
+R1
+!i10b 1
+!s100 M>UH8dcEZ=7BB1UH?l0am2
+R2
+I1OF0lHICWWO8449L`]_@T0
+R3
+R0
+R4
+8C:/Users/kollu/dspquartus/fftfixed/p2s.v
+FC:/Users/kollu/dspquartus/fftfixed/p2s.v
+!i122 4
+L0 1 71
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/kollu/dspquartus/fftfixed/p2s.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kollu/dspquartus/fftfixed|C:/Users/kollu/dspquartus/fftfixed/p2s.v|
+!i113 1
+R7
+R8
+R9
+vpipeline_regs
+R1
+!i10b 1
+!s100 >5i]RY0B7:ecKKPPkio<53
+R2
+I>@`P]813i1n_1Tl3zIoT[1
+R3
+R0
+R4
+8C:/Users/kollu/dspquartus/fftfixed/pipeline_regs.v
+FC:/Users/kollu/dspquartus/fftfixed/pipeline_regs.v
+!i122 3
+L0 1 18
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/kollu/dspquartus/fftfixed/pipeline_regs.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kollu/dspquartus/fftfixed|C:/Users/kollu/dspquartus/fftfixed/pipeline_regs.v|
+!i113 1
+R7
+R8
+R9
+vs2p
+R1
+!i10b 1
+!s100 Mh3c:YF>Yfnmd7SMHK<EI1
+R2
+I3cmf5]7Q=?jjA4OOTcl0X3
+R3
+R0
+w1776014475
+8C:/Users/kollu/dspquartus/fftfixed/s2p.v
+FC:/Users/kollu/dspquartus/fftfixed/s2p.v
+!i122 2
+L0 1 53
+R5
+r1
+!s85 0
+31
+Z11 !s108 1776016110.000000
+!s107 C:/Users/kollu/dspquartus/fftfixed/s2p.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kollu/dspquartus/fftfixed|C:/Users/kollu/dspquartus/fftfixed/s2p.v|
+!i113 1
+R7
+R8
+R9
+vsimple_twiddle_block
+Z12 !s110 1776016110
+!i10b 1
+!s100 V=lh;>gf1`YiCh`MCH9dR0
+R2
+I;<2alUA8IM^<V]KOXd9;20
+R3
+R0
+R4
+8C:/Users/kollu/dspquartus/fftfixed/simple_twiddle_blk.v
+FC:/Users/kollu/dspquartus/fftfixed/simple_twiddle_blk.v
+!i122 1
+R10
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/kollu/dspquartus/fftfixed/simple_twiddle_blk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kollu/dspquartus/fftfixed|C:/Users/kollu/dspquartus/fftfixed/simple_twiddle_blk.v|
+!i113 1
+R7
+R8
+R9
+vtb
+R1
+!i10b 1
+!s100 8Hb0HPO]1e`YVidF1GLlG3
+R2
+IPWXa9TEZa88AD=mmhTO5o0
+R3
+R0
+w1776015268
+8C:/Users/kollu/dspquartus/fftfixed/tb.v
+FC:/Users/kollu/dspquartus/fftfixed/tb.v
+!i122 8
+L0 21 102
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/kollu/dspquartus/fftfixed/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kollu/dspquartus/fftfixed|C:/Users/kollu/dspquartus/fftfixed/tb.v|
+!i113 1
+R7
+R8
+R9
+vtop
+R12
+!i10b 1
+!s100 ej]`d]aTLOPLbH@=`z>E]1
+R2
+Id<^CYVAlZLkLzi`kFo3Hi3
+R3
+R0
+R4
+8C:/Users/kollu/dspquartus/fftfixed/top.v
+FC:/Users/kollu/dspquartus/fftfixed/top.v
+!i122 0
+L0 11 67
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/kollu/dspquartus/fftfixed/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kollu/dspquartus/fftfixed|C:/Users/kollu/dspquartus/fftfixed/top.v|
+!i113 1
+R7
+R8
+R9

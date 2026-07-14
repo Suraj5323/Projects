@@ -1,0 +1,88 @@
+`timescale 1ns/1ps
+
+module tb;
+
+    reg clk, reset;
+
+    reg signed [7:0] serial_in_real;
+    reg signed [7:0] serial_in_imag;
+    reg in_valid;
+
+    wire signed [10:0] serial_out_real;
+    wire signed [10:0] serial_out_imag;
+    wire out_valid;
+
+    // DUT
+    top uut (
+        .clk(clk),
+        .reset(reset),
+        .serial_in_real(serial_in_real),
+        .serial_in_imag(serial_in_imag),
+        .in_valid(in_valid),
+        .serial_out_real(serial_out_real),
+        .serial_out_imag(serial_out_imag)
+    );
+
+    integer i, frame;
+
+    // 100 MHz clock
+    always #5 clk = ~clk;
+
+    initial begin
+        clk = 0;
+        reset = 1;
+        in_valid = 0;
+        serial_in_real = 0;
+        serial_in_imag = 0;
+
+        $dumpfile("top.vcd");
+        $dumpvars(0, tb);
+
+        //-----------------------------
+        // Reset
+        //-----------------------------
+        #20;
+        reset = 0;
+
+        @(posedge clk);
+
+        //-----------------------------
+        // Continuous Streaming
+        //-----------------------------
+        in_valid = 1;   // Keep valid HIGH continuously
+
+        // FIX: drive inputs after negedge, not after posedge
+        for (frame = 0; frame < 3; frame = frame + 1) begin
+            for (i = 0; i < 8; i = i + 1) begin
+                @(negedge clk);                              // wait for falling edge
+                serial_in_real = i + 1 + (frame * 8);       // blocking assignment (=)
+                serial_in_imag = 1;
+            end
+        end
+
+        @(negedge clk);
+        in_valid   = 0;	
+        serial_in_real = 0;
+        serial_in_imag = 0;
+
+        //-----------------------------
+        // Wait for DUT output
+        //-----------------------------
+        #400;
+        $finish;
+    end
+
+    //-----------------------------
+    // Monitor
+    //-----------------------------
+    always @(posedge clk) begin
+        if (1) begin
+            $display("Time=%0t | OUT = %0d + j%0d",
+                $time,
+                $signed(serial_out_real),
+                $signed(serial_out_imag)
+            );
+        end
+    end
+
+endmodule
